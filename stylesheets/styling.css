@@ -1,9 +1,15 @@
+body{
+  background-color: #fafafa;
+  font-family: sans-serif;
+}
+
 .sign_up_images{
   border-radius: 10%;
 }
 
 .header_bar{
-  background-color: blue;
+  background-color: #1f66b4;
+  color: #fffeff;
   text-align: center;
   padding: 1%;
   margin-bottom: 1%;
@@ -16,6 +22,14 @@
   width: 50%;
 }
 
+.benefit_statement h2{
+  color: #3d4c5f;
+}
+
+.value_statements h4{
+  color: #3d4c5f;
+}
+
 .main_right{
   background-color: purple;
   width: 49%;
@@ -23,3 +37,51 @@
   margin-left: 1%;
 }
 
+.sign_up_area{
+  background-color: #ffffff;
+  width: 60%;
+  padding: 1%;
+  border: 1px solid #e8e8e8;
+  border-radius: 1%;
+  margin-right: 5%;
+  color: #8c949e;
+}
+
+.dob{
+  width: 10%;
+  padding: 2%;
+  text-align: center;
+}
+
+.dob.year{
+  padding: 2% 4%;
+}
+
+.sign_up_area #sign_up_button{
+  background-color: #36b063;
+  color: white;
+  font-size: 1.00em;
+  border-radius: 0%;
+  width: 90%;
+  padding: 2%;
+
+}
+
+.sign_up_area a{
+  text-decoration: none;
+}
+
+input{
+  background-color: #fefff1;
+  border-radius: 12%;
+}
+
+.sign_up_images{
+  float: left;
+}
+
+.left_content{
+  background-color: blue;
+  width: 70%;
+  margin-left: 5%;
+}
