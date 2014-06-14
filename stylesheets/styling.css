@@ -42,9 +42,20 @@ body{
   padding: 1%;
   border: 1px solid #e8e8e8;
   border-radius: 1%;
+  margin-right: 5%;
 }
 
 input{
   background-color: #fefff1;
   border-radius: 12%;
+}
+
+.sign_up_images{
+  float: left;
+}
+
+.left_content{
+  background-color: blue;
+  width: 70%;
+  margin-left: 5%;
 }
