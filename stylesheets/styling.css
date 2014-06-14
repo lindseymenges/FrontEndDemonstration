@@ -1,9 +1,14 @@
+body{
+  background-color: #fafafa;
+}
+
 .sign_up_images{
   border-radius: 10%;
 }
 
 .header_bar{
-  background-color: blue;
+  background-color: #1f66b4;
+  color: #fffeff;
   text-align: center;
   padding: 1%;
   margin-bottom: 1%;
@@ -16,6 +21,14 @@
   width: 50%;
 }
 
+.benefit_statement h2{
+  color: #3d4c5f;
+}
+
+.value_statements h4{
+  color: #3d4c5f;
+}
+
 .main_right{
   background-color: purple;
   width: 49%;
@@ -23,3 +36,15 @@
   margin-left: 1%;
 }
 
+.sign_up_area{
+  background-color: yellow;
+  width: 60%;
+  padding: 1%;
+  border: 1px solid #e8e8e8;
+  border-radius: 1%;
+}
+
+input{
+  background-color: #fefff1;
+  border-radius: 12%;
+}
