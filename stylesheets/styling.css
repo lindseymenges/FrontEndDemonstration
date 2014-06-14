@@ -1,0 +1,10 @@
+.sign_up_images{
+  border-radius: 10%;
+}
+
+.header_bar{
+  background-color: blue;
+  text-align: center;
+  padding: 18px;
+  width: 100%;
+}
