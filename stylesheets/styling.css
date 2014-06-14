@@ -1,5 +1,6 @@
 body{
   background-color: #fafafa;
+  font-family: sans-serif;
 }
 
 .sign_up_images{
@@ -37,12 +38,37 @@ body{
 }
 
 .sign_up_area{
-  background-color: yellow;
+  background-color: #ffffff;
   width: 60%;
   padding: 1%;
   border: 1px solid #e8e8e8;
   border-radius: 1%;
   margin-right: 5%;
+  color: #8c949e;
+}
+
+.dob{
+  width: 10%;
+  padding: 2%;
+  text-align: center;
+}
+
+.dob.year{
+  padding: 2% 4%;
+}
+
+.sign_up_area #sign_up_button{
+  background-color: #36b063;
+  color: white;
+  font-size: 1.00em;
+  border-radius: 0%;
+  width: 90%;
+  padding: 2%;
+
+}
+
+.sign_up_area a{
+  text-decoration: none;
 }
 
 input{
