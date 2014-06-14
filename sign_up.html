@@ -3,6 +3,7 @@
 <head>
   <title>Oration Interview Challenge</title>
   <link rel="stylesheet" type="text/css" href="stylesheets/styling.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
 </head>
 <body>
 <div class="header_bar">
@@ -32,20 +33,20 @@
   <div class="sign_up_area">
     <form class="sign_up_form">
       <p>Last name</p>
-      <input type="text" name="last_name"><br>
+      <input type="text" name="last_name" class="last_name"><br>
       <p>Date of birth</p>
-      <input type="text" name="DOB_day" placeholder="Day" class="dob"> / <input type="text" name="dob_month" placeholder="Month" class="dob"> / <input type="text" name="dob_year" placeholder="Year" class="dob year"> why?<br>
+      <input type="text" name="DOB_day" placeholder="Day" class="dob dob_day"> / <input type="text" name="dob_month" placeholder="Month" class="dob dob_month"> / <input type="text" name="dob_year" placeholder="Year" class="dob dob_year"> why?<br>
       <p>Last four digits of your Social Security Number</p>
-      <input type="text" name="ssn_last_four"> why?<br>
+      <input type="text" name="ssn_last_four" class="ssn_last_four"> why?<br>
       <p>Create password</p>
-      <input type="password" name="password"><br>
+      <input type="password" name="password" class="password"><br>
       <p>Re-type password</p>
-      <input type="password" name="password"><br>
+      <input type="password" name="password" class="password"><br>
+      <div class="sign_up_error_message">
+        <p>Please fill in all fields. We need to make sure you are not a robot. Beep.</p>
+      </div>
       <input type="submit" value="Sign-up Now" id="sign_up_button">
     </form>
-    <div class="sign_up_error_message">
-      <p>Please fill in all fields. We need to make sure you are not a robot. Beep.</p>
-    </div>
     <div class="sign_up_disclaimer">
       <h6>By enrolling, you accept the <a href="#">Terms of Service</a></h6>
     </div>

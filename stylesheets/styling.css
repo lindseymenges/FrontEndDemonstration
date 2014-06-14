@@ -16,6 +16,10 @@ body{
   width: 100%;
 }
 
+.main_left, .main_right{
+  margin-top: 3%;
+}
+
 .main_left{
   background-color: red;
   float: left;
@@ -47,14 +51,45 @@ body{
   color: #8c949e;
 }
 
+.sign_up_form{
+
+}
+
+.sign_up_form p{
+  margin-bottom: 0.5%;
+  margin-left: 10%;
+}
+
+.ssn_last_four{
+  width: 15%;
+  padding: 2%;
+  margin-left: 10%;
+}
+
 .dob{
   width: 10%;
   padding: 2%;
   text-align: center;
 }
 
-.dob.year{
+.dob.dob_day{
+  margin-left: 10%;
+}
+
+.dob.dob_month{
+  width: 12%;
+}
+
+.dob.dob_year{
   padding: 2% 4%;
+}
+
+
+.sign_up_area .password, .sign_up_area .last_name{
+  width: 75%;
+  margin: 2% 10%;
+  padding: 2%;
+
 }
 
 .sign_up_area #sign_up_button{
@@ -62,18 +97,30 @@ body{
   color: white;
   font-size: 1.00em;
   border-radius: 0%;
-  width: 90%;
-  padding: 2%;
+  width: 80%;
+  margin: 2% 10%;
+  padding: 3%;
+}
 
+.sign_up_error_message p{
+  background-color: #f1dfdf;
+  color: #c26778;
+  width: 78%;
+  margin-left: 10%;
+  padding: 2%;
 }
 
 .sign_up_area a{
   text-decoration: none;
 }
 
+.sign_up_disclaimer{
+  text-align: center;
+}
+
 input{
   background-color: #fefff1;
-  border-radius: 12%;
+  border: 1px solid #d1d1d0;
 }
 
 .sign_up_images{
