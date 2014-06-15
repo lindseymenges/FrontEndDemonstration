@@ -1,0 +1,15 @@
+@media (max-width: 640px){
+  .main_left{
+    width: 100%;
+    margin: 0px auto;
+    display: none;
+  }
+
+  .main_right{
+    width: 100%;
+  }
+
+  .sign_up_area{
+    width: 100%;
+  }
+}

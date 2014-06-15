@@ -47,20 +47,23 @@ body{
 .number_area{
   color: #31b763;
   width: 100%;
-  font-size: 1.75em;
   margin: 5% 0;
-}
-
-.benefit_statement h2, .money_number{
-  color: purple;
-  /*GET A BOLD FONT FOR THESE TWO*/
 }
 
 .big_number_text{
   display: inline-block;
-  font-size: 0.35em;
+  font-size: 1.0em;
   margin-left: 5%;
 }
+
+.money_number{
+  font-size: 3.5em;
+}
+
+.benefit_statement h2, .money_number{
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 .sign_up_images{
   border-radius: 10%;
