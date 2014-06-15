@@ -1,41 +1,69 @@
+/*Main: Document, Header, Left and Right Areas*/
+
 body{
   background-color: #fafafa;
   font-family: sans-serif;
 }
 
-.sign_up_images{
-  border-radius: 10%;
+.main_left, .main_right{
+  margin-top: 1%;
 }
 
 .header_bar{
   background-color: #1f66b4;
   color: #fffeff;
   text-align: center;
-  padding: 1%;
-  margin-bottom: 1%;
+  padding: 0.5%;
   width: 100%;
 }
 
-.main_left, .main_right{
-  margin-top: 3%;
+/*Left Area*/
+
+.sign_up_images{
+  border-radius: 10%;
+  box-shadow: 0px 5px #bbbbbb;
 }
 
 .main_left{
-  background-color: red;
   float: left;
-  width: 50%;
+  width: 40%;
+  margin-left: 5%; 
+  padding-right: 3%;
+}
+
+.benefit_statement{
+  border-bottom: 2px solid #e6ecf0;
+  color: #6b7682;
 }
 
 .benefit_statement h2{
   color: #3d4c5f;
 }
 
+.number_area{
+  color: #31b763;
+  width: 100%;
+  font-size: 1.75em;
+}
+
+.big_number_text{
+  display: inline-block;
+  font-size: 0.35em;
+  margin-left: 5%;
+}
+
+.value_statements_text{
+  color: #4c5b6a;
+  margin-left: 10%;
+}
+
 .value_statements h4{
   color: #3d4c5f;
 }
 
+/*Right Area*/
+
 .main_right{
-  background-color: purple;
   width: 49%;
   float: right;
   margin-left: 1%;
@@ -45,19 +73,20 @@ body{
   background-color: #ffffff;
   width: 60%;
   padding: 1%;
-  border: 1px solid #e8e8e8;
+  border: 2px solid #e8e8e8;
   border-radius: 1%;
   margin-right: 5%;
   color: #8c949e;
 }
 
-.sign_up_form{
-
-}
-
 .sign_up_form p{
   margin-bottom: 0.5%;
   margin-left: 10%;
+  color: #77818c;
+}
+
+.why{
+  color: #aab5c2;
 }
 
 .ssn_last_four{
@@ -112,6 +141,7 @@ body{
 
 .sign_up_area a{
   text-decoration: none;
+  color: #77a1cf;
 }
 
 .sign_up_disclaimer{
@@ -125,10 +155,4 @@ input{
 
 .sign_up_images{
   float: left;
-}
-
-.left_content{
-  background-color: blue;
-  width: 70%;
-  margin-left: 5%;
 }
