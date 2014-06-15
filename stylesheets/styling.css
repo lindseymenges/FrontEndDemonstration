@@ -47,20 +47,23 @@ body{
 .number_area{
   color: #31b763;
   width: 100%;
-  font-size: 1.75em;
   margin: 5% 0;
-}
-
-.benefit_statement h2, .money_number{
-  color: purple;
-  /*GET A BOLD FONT FOR THESE TWO*/
 }
 
 .big_number_text{
   display: inline-block;
-  font-size: 0.35em;
+  font-size: 1.0em;
   margin-left: 5%;
 }
+
+.money_number{
+  font-size: 3.5em;
+}
+
+.benefit_statement h2, .money_number{
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 .sign_up_images{
   border-radius: 10%;
@@ -112,6 +115,11 @@ body{
   color: #77818c;
 }
 
+input:invalid{
+  border: 2px solid #efc7c7;
+  background-color: #f9eded
+}
+
 .why{
   color: #aab5c2;
 }
@@ -158,13 +166,16 @@ body{
   padding: 3%;
 }
 
-.sign_up_error_message p{
+#sign_up_error_message{
+  display: none;
+}
+
+#sign_up_error_message p{
   background-color: #f1dfdf;
   color: #c26778;
   width: 78%;
   margin-left: 10%;
   padding: 2%;
-  /*display: none;*/
 }
 
 .sign_up_area a{
