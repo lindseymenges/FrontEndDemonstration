@@ -115,6 +115,11 @@ body{
   color: #77818c;
 }
 
+input:invalid{
+  border: 2px solid #efc7c7;
+  background-color: #f9eded
+}
+
 .why{
   color: #aab5c2;
 }
@@ -161,13 +166,16 @@ body{
   padding: 3%;
 }
 
-.sign_up_error_message p{
+#sign_up_error_message{
+  display: none;
+}
+
+#sign_up_error_message p{
   background-color: #f1dfdf;
   color: #c26778;
   width: 78%;
   margin-left: 10%;
   padding: 2%;
-  /*display: none;*/
 }
 
 .sign_up_area a{

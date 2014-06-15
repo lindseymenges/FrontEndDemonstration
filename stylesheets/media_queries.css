@@ -1,7 +1,5 @@
 @media (max-width: 640px){
   .main_left{
-    width: 100%;
-    margin: 0px auto;
     display: none;
   }
 
@@ -12,4 +10,12 @@
   .sign_up_area{
     width: 100%;
   }
+
+ /* .why{
+    display: none;
+  }
+
+  .slash{
+    display: none;
+  }*/
 }

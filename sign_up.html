@@ -3,8 +3,9 @@
 <head>
   <title>Oration Interview Challenge</title>
   <link rel="stylesheet" type="text/css" href="stylesheets/styling.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
   <link rel="stylesheet" type="text/css" href="stylesheets/media_queries.css" media="screen">
+  <script type="text/javascript" src="javascripts/application.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
   <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
@@ -41,14 +42,14 @@
       <p>Last name</p>
       <input type="text" name="last_name" class="last_name"><br>
       <p>Date of birth</p>
-      <input type="text" name="DOB_day" placeholder="Day" class="dob dob_day"> / <input type="text" name="dob_month" placeholder="Month" class="dob dob_month"> / <input type="text" name="dob_year" placeholder="Year" class="dob dob_year"><span class="why"> why?</span><br>
+      <input type="text" name="DOB_day" placeholder="Day" class="dob dob_day"><span class="slash"> / </span><input type="text" name="dob_month" placeholder="Month" class="dob dob_month"><span class="slash"> / </span><input type="text" name="dob_year" placeholder="Year" class="dob dob_year"><span class="why"> why?</span><br>
       <p>Last four digits of your Social Security Number</p>
       <input type="text" name="ssn_last_four" class="ssn_last_four"><span class="why"> why?</span><br>
       <p>Create password</p>
       <input type="password" name="password" class="password"><br>
       <p>Re-type password</p>
       <input type="password" name="password" class="password"><br>
-      <div class="sign_up_error_message">
+      <div id="sign_up_error_message">
         <p>Please fill in all fields. We need to make sure you are not a robot. Beep.</p>
       </div>
       <input type="submit" value="Sign-up Now" id="sign_up_button">
