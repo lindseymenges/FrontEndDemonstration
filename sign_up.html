@@ -7,17 +7,12 @@
   <script type="text/javascript" src="javascripts/application.js"></script>
   <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
   <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div class="header_bar">
   <h1>Company, inc.</h1>
-</div>
-<div class="display_buttons">
-  <p>Oooh, a lesson in not changing history from "Mr. I'm-My-Own-Grandpa"!</p>
-  <button id="display_info_button">More Information</button><br>
-  <button id="display_sign_up_button">Sign Up</button>
 </div>
 <div id="main_left">
   <div class="left_elements">
@@ -41,9 +36,14 @@
     </div>
   </div>
 </div>
+<div class="display_buttons">
+  <p>Oooh, a lesson in not changing history from "Mr. I'm-My-Own-Grandpa"!</p>
+  <button id="display_info_button">Hide Company, inc. Information</button><br>
+  <button id="display_sign_up_button">Sign Up</button>
+</div>
 <div id="main_right">  
   <div class="sign_up_area">
-    <form class="sign_up_form">
+    <form class="sign_up_form" onsubmit="return highlightFields();">
       <p>Last name</p>
       <input type="text" name="last_name" class="last_name"><br>
       <p>Date of birth</p>
