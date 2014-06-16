@@ -1,7 +1,7 @@
+/*Mobile Screens (Smartphones & Small Tablets)*/
 @media (max-width: 640px){
   #main_left{
     width: 100%;
-    /*display: none;*/
   }
 
   #main_right{
