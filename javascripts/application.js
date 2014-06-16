@@ -41,22 +41,25 @@ View.prototype = {
     }
   },
   displayInformation: function(){
+    var displayInfoButton = document.getElementById('display_info_button')
     var companyInformation = document.getElementById('main_left')
     if (companyInformation.style.display == "none"){
       companyInformation.style.display = "inline-block"
+      displayInfoButton.innerText = "Hide Information"
     }
     else {
       companyInformation.style.display = "none"
+      displayInfoButton.innerText = "Show Company, inc. Information"
     }
   },
 
   displaySignUpInfo: function(){
     var signUpInformation = document.getElementById('main_right')
-    if (signUpInformation.style.display == "none"){
-      signUpInformation.style.display = "inline-block"
+    if (signUpInformation.style.display == "inline-block"){
+      signUpInformation.style.display = "none"
     }
     else {
-      signUpInformation.style.display = "none"
+      signUpInformation.style.display = "inline-block"
     }
   }
 }
