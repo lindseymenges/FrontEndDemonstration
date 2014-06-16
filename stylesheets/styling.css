@@ -2,6 +2,7 @@
 body{
   background-color: #fafafa;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 #main_left, #main_right{
@@ -37,6 +38,9 @@ body{
 
 .benefit_statement h2{
   color: #3d4c5f;
+  font-weight: 700;
+  font-size: 2.0em;
+  margin-bottom: -10px;
 }
 
 .benefit_statement_info{
@@ -59,7 +63,7 @@ body{
   font-size: 3.5em;
 }
 
-.benefit_statement h2, .money_number{
+.money_number{
   font-family: 'Montserrat', sans-serif;
 }
 
