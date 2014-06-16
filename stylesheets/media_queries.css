@@ -1,5 +1,5 @@
 /*Mobile Screens (Smartphones & Small Tablets)*/
-@media (max-width: 640px){
+@media (max-width: 768px){
   #main_left{
     width: 100%;
   }
