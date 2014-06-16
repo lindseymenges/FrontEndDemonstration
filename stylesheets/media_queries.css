@@ -1,21 +1,37 @@
 @media (max-width: 640px){
-  .main_left{
+  #main_left{
+    width: 100%;
     display: none;
   }
 
-  .main_right{
+  #main_right{
+    width: 100%;
+    display: none;
+  }
+
+  .display_buttons{
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 5% 5%;
+    color: #6b7682;
+  }
+
+  #display_info_button, #display_sign_up_button{
+    margin-top: 10%;
+    padding: 5%;
+    background-color: #bde7b8;
+  }
+
+  .left_elements, .sign_up_area{
     width: 100%;
   }
 
-  .sign_up_area{
-    width: 100%;
-  }
+ .sign_up_form{
+  font-size: 0.75em;
+ }
 
- /* .why{
-    display: none;
-  }
-
-  .slash{
-    display: none;
-  }*/
+ .dob{
+  padding: 2%;
+ }
 }

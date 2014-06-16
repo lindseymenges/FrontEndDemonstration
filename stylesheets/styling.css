@@ -5,7 +5,7 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
-.main_left, .main_right{
+#main_left, #main_right{
   margin-top: 1%;
 }
 
@@ -19,7 +19,7 @@ body{
 }
 
 /*Left Area*/
-.main_left{
+#main_left{
   float: left;
   width: 45%;
   margin-left: 5%; 
@@ -93,7 +93,7 @@ body{
 
 /*Right Area*/
 
-.main_right{
+#main_right{
   width: 49%;
   float: right;
   margin-left: 1%;
@@ -113,11 +113,6 @@ body{
   margin-bottom: 0.5%;
   margin-left: 10%;
   color: #77818c;
-}
-
-input:invalid{
-  border: 2px solid #efc7c7;
-  background-color: #f9eded
 }
 
 .why{
@@ -194,4 +189,8 @@ input{
 
 .sign_up_images{
   float: left;
+}
+
+.display_buttons{
+  display: none;
 }
