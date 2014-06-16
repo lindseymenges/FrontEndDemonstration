@@ -50,7 +50,7 @@ var highlightFields = function(){
       var inputField = document.getElementsByTagName('input').item(x)
       var errorMessage = document.getElementById('sign_up_error_message')
       if(document.getElementsByTagName('input').item(x).value == ''){
-        inputField.style.border = "2px solid #efc7c7"
+        inputField.style.border = "2px solid #e8a8a7"
         inputField.style.backgroundColor = "#f9eded";
         errorMessage.style.display = "block"
         return false
