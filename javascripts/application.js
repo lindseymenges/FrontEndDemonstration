@@ -18,7 +18,6 @@ Controller.prototype = {
 }
 
 View = function(){
-
 };
 
 View.prototype = {
