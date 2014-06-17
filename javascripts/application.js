@@ -10,9 +10,7 @@ Controller = function(view){
 
 Controller.prototype = {
   bindEvents: function(){
-    displayInfoButton = document.getElementById('display_info_button')
     displaySignUpButton = document.getElementById('display_sign_up_button')
-    displayInfoButton.onclick = view.displayInformation;
     displaySignUpButton.onclick = view.displaySignUpInfo;
   }
 }
@@ -21,19 +19,6 @@ View = function(){
 };
 
 View.prototype = {
-  displayInformation: function(){
-    var displayInfoButton = document.getElementById('display_info_button')
-    var companyInformation = document.getElementById('main_left')
-    if (companyInformation.style.display == "none"){
-      companyInformation.style.display = "inline-block"
-      displayInfoButton.innerText = "Hide Information"
-    }
-    else {
-      companyInformation.style.display = "none"
-      displayInfoButton.innerText = "Show Company, inc. Information"
-    }
-  },
-
   displaySignUpInfo: function(){
     var signUpInformation = document.getElementById('main_right')
     if (signUpInformation.style.display == "inline-block"){

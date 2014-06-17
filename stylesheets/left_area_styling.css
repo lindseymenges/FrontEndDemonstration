@@ -1,0 +1,73 @@
+#main_left{
+  float: left;
+  width: 45%;
+  margin-left: 5%; 
+}
+
+.left_elements{
+  width: 75%;
+  float: right;
+}
+
+.benefit_statement{
+  border-bottom: 2px solid #e6ecf0;
+  color: #6b7682;
+  width: 95%;
+}
+
+.benefit_statement h2{
+  color: #3d4c5f;
+  font-weight: 700;
+  font-size: 2.0em;
+  margin-bottom: -10px;
+}
+
+.benefit_statement_info{
+  width: 95%;
+}
+
+.number_area{
+  color: #31b763;
+  width: 100%;
+  margin: 5% 0;
+}
+
+.big_number_text{
+  display: inline-block;
+  font-size: 1.0em;
+  margin-left: 5%;
+}
+
+.money_number{
+  font-size: 3.5em;
+}
+
+.money_number{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.sign_up_images{
+  border-radius: 10%;
+  box-shadow: 0px 5px #bbbbbb;
+}
+.value_statements{
+  width: 75%;
+  font-size: 1.25em;
+}
+
+.value_statements h4{
+  color: #455262;
+}
+
+.value_statements_text{
+  color: #4c5b6a;
+  margin-left: 20%;
+  margin-bottom: 10%;
+  width: 100%;
+}
+
+.value_statement_info{
+  color: #647280;
+  font-size: 0.75em;
+}

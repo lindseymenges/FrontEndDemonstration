@@ -1,0 +1,102 @@
+#main_right{
+  width: 49%;
+  float: right;
+  margin-left: 1%;
+}
+
+.sign_up_area{
+  background-color: #ffffff;
+  width: 60%;
+  padding: 1%;
+  border: 2px solid #e8e8e8;
+  border-radius: 1%;
+  margin-right: 5%;
+  color: #8c949e;
+}
+
+.sign_up_form p{
+  margin-bottom: 0.5%;
+  margin-left: 10%;
+  color: #77818c;
+}
+
+.why{
+  color: #aab5c2;
+}
+
+.ssn_last_four{
+  width: 15%;
+  padding: 2%;
+  margin-left: 10%;
+}
+
+.dob{
+  width: 10%;
+  padding: 2%;
+  text-align: center;
+}
+
+.dob.dob_day{
+  margin-left: 10%;
+}
+
+.dob.dob_month{
+  width: 12%;
+}
+
+.dob.dob_year{
+  padding: 2% 4%;
+}
+
+
+.sign_up_area .password, .sign_up_area .last_name{
+  width: 75%;
+  margin: 2% 10%;
+  padding: 2%;
+
+}
+
+.sign_up_area #sign_up_button{
+  background-color: #36b063;
+  color: white;
+  font-size: 1.00em;
+  border-radius: 0%;
+  width: 80%;
+  margin: 2% 10%;
+  padding: 3%;
+}
+
+#sign_up_error_message{
+  display: none;
+}
+
+#sign_up_error_message p{
+  background-color: #f1dfdf;
+  color: #c26778;
+  width: 78%;
+  margin-left: 10%;
+  padding: 2%;
+}
+
+.sign_up_area a{
+  text-decoration: none;
+  color: #77a1cf;
+}
+
+.sign_up_disclaimer{
+  text-align: center;
+}
+
+input{
+  background-color: #fefff1;
+  border: 1px solid #d1d1d0;
+  border-radius: 8px;
+}
+
+.sign_up_images{
+  float: left;
+}
+
+.display_buttons{
+  display: none;
+}

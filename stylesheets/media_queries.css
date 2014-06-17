@@ -14,13 +14,13 @@
     width: 80%;
     text-align: center;
     margin: 5% 5%;
-    color: #6b7682;
+    color: #ffffff;
   }
 
-  #display_info_button, #display_sign_up_button{
+  #display_sign_up_button{
     margin-top: 10%;
     padding: 5%;
-    background-color: #bde7b8;
+    background-color: #38aa62;
   }
 
   .left_elements, .sign_up_area{
