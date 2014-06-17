@@ -21,15 +21,9 @@ View = function(){
 View.prototype = {
   displaySignUpInfo: function(){
     var signUpInformation = document.getElementById('main_right')
-    if (signUpInformation.style.display == "inline-block"){
-      signUpInformation.style.display = "none"
-      document.getElementById('display_sign_up_button').innerText = "Sign Up"
-
-    }
-    else {
+    var displaySignUpButton = document.getElementById('display_sign_up_button')
       signUpInformation.style.display = "inline-block"
-      document.getElementById('display_sign_up_button').innerText = "Hide Sign Up"
-    }
+      displaySignUpButton.remove();
   }
 }
 
@@ -37,14 +31,13 @@ var highlightFields = function(){
     for(x = 0; x < document.getElementsByTagName('input').length; x++){
       var inputField = document.getElementsByTagName('input').item(x)
       var errorMessage = document.getElementById('sign_up_error_message')
-      if(document.getElementsByTagName('input').item(x).value == ''){
+      if(inputField.value == ''){
         markInputAsIncorrect(inputField);
         errorMessage.style.display = "block"
         return false
        }
        else{
-        inputField.style.border = "1px solid #d1d1d0"
-        inputField.style.backgroundColor = "#fefff1"
+        removeIncorrectClass(inputField)
        }
      }
      return true;
@@ -52,4 +45,8 @@ var highlightFields = function(){
 
 var markInputAsIncorrect = function(element) {
   element.className += " incorrect_input"
+}
+
+var removeIncorrectClass = function(element){
+  element.className = element.className.replace(/\bincorrect_input\b/g , '' )
 }

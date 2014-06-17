@@ -50,7 +50,9 @@
 .sign_up_images{
   border-radius: 10%;
   box-shadow: 0px 5px #bbbbbb;
+  float: left;
 }
+
 .value_statements{
   width: 75%;
   font-size: 1.25em;

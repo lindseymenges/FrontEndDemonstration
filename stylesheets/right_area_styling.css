@@ -103,10 +103,6 @@ input{
   border: 1px solid #d1d1d0;
 }
 
-.sign_up_images{
-  float: left;
-}
-
-.display_buttons{
+#display_sign_up_button{
   display: none;
 }

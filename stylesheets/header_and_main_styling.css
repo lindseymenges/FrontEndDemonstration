@@ -4,11 +4,11 @@ body{
   font-weight: 400;
 }
 
-#main_left, #main_right{
+section{
   margin-top: 1%;
 }
 
-.header_bar{
+header{
   background-color: #1f66b4;
   color: #fffeff;
   text-align: center;
