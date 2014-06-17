@@ -23,9 +23,12 @@ View.prototype = {
     var signUpInformation = document.getElementById('main_right')
     if (signUpInformation.style.display == "inline-block"){
       signUpInformation.style.display = "none"
+      document.getElementById('display_sign_up_button').innerText = "Sign Up"
+
     }
     else {
       signUpInformation.style.display = "inline-block"
+      document.getElementById('display_sign_up_button').innerText = "Hide Sign Up"
     }
   }
 }
@@ -35,8 +38,7 @@ var highlightFields = function(){
       var inputField = document.getElementsByTagName('input').item(x)
       var errorMessage = document.getElementById('sign_up_error_message')
       if(document.getElementsByTagName('input').item(x).value == ''){
-        inputField.style.border = "2px solid #e8a8a7"
-        inputField.style.backgroundColor = "#f9eded";
+        markInputAsIncorrect(inputField);
         errorMessage.style.display = "block"
         return false
        }
@@ -47,3 +49,7 @@ var highlightFields = function(){
      }
      return true;
   }
+
+var markInputAsIncorrect = function(element) {
+  element.className += " incorrect_input"
+}

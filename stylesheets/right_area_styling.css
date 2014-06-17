@@ -93,6 +93,16 @@ input{
   border-radius: 8px;
 }
 
+.incorrect_input{
+  background-color: #f9eded;
+  border: 2px solid #e8a8a7;
+}
+
+.correct_input{
+  background-color: #fefff1;
+  border: 1px solid #d1d1d0;
+}
+
 .sign_up_images{
   float: left;
 }

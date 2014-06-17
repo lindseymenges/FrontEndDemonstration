@@ -1,8 +1,8 @@
 <!-- HEADER TAG, look into section articles etc. (html5 tags)
 Split out styling into more files (left area, right area, etc.)
-Whitespace & indenting HTML
 Break out JS files as well
-JS CSS styling css (CSS have style there, have JS add class) -->
+Fix removing classes
+Add input sanitation for form-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,66 +18,69 @@ JS CSS styling css (CSS have style there, have JS add class) -->
   <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="header_bar">
-  <h1>Company, inc.</h1>
-</div>
-<div id="main_left">
-  <div class="left_elements">
+  <div class="header_bar">
+    <h1>Company, inc.</h1>
+  </div>
 
-    <div class="benefit_statement">
-      <h2>Big benefit statement</h2>
-      <p class="benefit_statement_info">
-        Morbo can't understand his teleprompter because he forgot how you say that letter that's shaped like a hat.
-      </p>
-    </div>
+  <div id="main_left">
+    <div class="left_elements">
 
-    <div class="number_area">
-      <span class="money_number">$627</span>
-      <span class="big_number_text">WOW THIS RIGHT<br>HERE IS A BIG NUMBER</span>
-    </div>
+      <div class="benefit_statement">
+        <h2>Big benefit statement</h2>
+        <p class="benefit_statement_info">
+          Morbo can't understand his teleprompter because he forgot how you say that letter that's shaped like a hat.
+        </p>
+      </div>
 
-    <div class="value_statements">
-      <img src="images/storefront_image.png" class="sign_up_images">
-      <div class="value_statements_text">
-        <span>Value statement one</span><br>
-        <div class="value_statement_info">
-          Whoa a real live robot; or is that some kind of cheesy New Year's costume? Yes, I saw.
+      <div class="number_area">
+        <span class="money_number">$627</span>
+        <span class="big_number_text">WOW THIS RIGHT<br>HERE IS A BIG NUMBER</span>
+      </div>
+
+      <div class="value_statements">
+        <img src="images/storefront_image.png" class="sign_up_images">
+        <div class="value_statements_text">
+          <span>Value statement one</span><br>
+          <div class="value_statement_info">
+            Whoa a real live robot; or is that some kind of cheesy New Year's costume? Yes, I saw.
+          </div>
         </div>
-    </div>
-      <img src="images/checkbook_image.png" class="sign_up_images">
-      <div class="value_statements_text">
-        <span>Value statement two<br></span><div class="value_statement_info">Daylight and everything. Dr. Zoidberg, that doesn't make sense. Don't shoot fire stick in space canoe!</div>
+        <img src="images/checkbook_image.png" class="sign_up_images">
+        <div class="value_statements_text">
+          <span>Value statement two<br></span><div class="value_statement_info">Daylight and everything. Dr. Zoidberg, that doesn't make sense. Don't shoot fire stick in space canoe!</div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<div class="display_buttons">
-  <!-- <p>Oooh, a lesson in not changing history from "Mr. I'm-My-Own-Grandpa"!</p> -->
-  <!-- <button id="display_info_button">Hide Company, inc. Information</button><br> -->
-  <button id="display_sign_up_button">Sign Up</button>
-</div>
-<div id="main_right">  
-  <div class="sign_up_area">
-    <form class="sign_up_form" onsubmit="return highlightFields();">
-      <p>Last name</p>
-      <input type="text" name="last_name" class="last_name"><br>
-      <p>Date of birth</p>
-      <input type="text" name="DOB_day" placeholder="Day" class="dob dob_day"><span class="slash"> / </span><input type="text" name="dob_month" placeholder="Month" class="dob dob_month"><span class="slash"> / </span><input type="text" name="dob_year" placeholder="Year" class="dob dob_year"><span class="why"> why?</span><br>
-      <p>Last four digits of your Social Security Number</p>
-      <input type="text" name="ssn_last_four" class="ssn_last_four"><span class="why"> why?</span><br>
-      <p>Create password</p>
-      <input type="password" name="password" class="password"><br>
-      <p>Re-type password</p>
-      <input type="password" name="password" class="password"><br>
-      <div id="sign_up_error_message">
-        <p>Please fill in all fields. We need to make sure you are not a robot. Beep.</p>
+
+  <div id="main_right">  
+    <div class="sign_up_area">
+
+      <form class="sign_up_form" onsubmit="return highlightFields();">
+        <p>Last name</p>
+        <input type="text" name="last_name" class="last_name"><br>
+        <p>Date of birth</p>
+        <input type="text" name="DOB_day" placeholder="Day" class="dob dob_day"><span class="slash"> / </span><input type="text" name="dob_month" placeholder="Month" class="dob dob_month"><span class="slash"> / </span><input type="text" name="dob_year" placeholder="Year" class="dob dob_year"><span class="why"> why?</span><br>
+        <p>Last four digits of your Social Security Number</p>
+        <input type="text" name="ssn_last_four" class="ssn_last_four"><span class="why"> why?</span><br>
+        <p>Create password</p>
+        <input type="password" name="password" class="password"><br>
+        <p>Re-type password</p>
+        <input type="password" name="password" class="password"><br>
+        <div id="sign_up_error_message">
+          <p>Please fill in all fields. We need to make sure you are not a robot. Beep.</p>
+        </div>
+        <input type="submit" value="Sign-up Now" id="sign_up_button">
+      </form>
+
+      <div class="sign_up_disclaimer">
+        <h6>By enrolling, you accept the <a href="#">Terms of Service</a></h6>
       </div>
-      <input type="submit" value="Sign-up Now" id="sign_up_button">
-    </form>
-    <div class="sign_up_disclaimer">
-      <h6>By enrolling, you accept the <a href="#">Terms of Service</a></h6>
     </div>
   </div>
-</div>
+
+  <div class="display_buttons">
+    <button id="display_sign_up_button">Sign Up</button>
+  </div>
 </body>
 </html>
