@@ -66,8 +66,12 @@
   padding: 3%;
 }
 
-#sign_up_error_message{
+.invisible{
   display: none;
+}
+
+.visible{
+  display: block;
 }
 
 #sign_up_error_message p{

@@ -33,7 +33,7 @@ var highlightFields = function(){
       var errorMessage = document.getElementById('sign_up_error_message')
       if(inputField.value == ''){
         markInputAsIncorrect(inputField);
-        errorMessage.style.display = "block"
+        errorMessageDisplay(errorMessage);
         return false
        }
        else{
@@ -49,4 +49,8 @@ var markInputAsIncorrect = function(element) {
 
 var removeIncorrectClass = function(element){
   element.className = element.className.replace(/\bincorrect_input\b/g , '' )
+}
+
+var errorMessageDisplay = function(errorMessage){
+  errorMessage.className = errorMessage.className.replace(/\binvisible\b/, 'visible')
 }
