@@ -9,18 +9,14 @@
     display: none;
   }
 
-  .display_buttons{
+  #display_sign_up_button{
+    padding: 5%;
+    background-color: #38aa62;
     display: block;
     width: 80%;
     text-align: center;
-    margin: 5% 5%;
-    color: #6b7682;
-  }
-
-  #display_info_button, #display_sign_up_button{
-    margin-top: 10%;
-    padding: 5%;
-    background-color: #bde7b8;
+    margin: 10%;
+    color: #ffffff;
   }
 
   .left_elements, .sign_up_area{
